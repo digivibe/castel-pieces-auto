@@ -3564,7 +3564,7 @@ blockquote {
 }
 
 .section.book-cta {
-  background-image: linear-gradient(42deg, rgba(202, 233, 67, .3), rgba(255, 255, 255, 0) 34%), linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets-global.website-files.com/6544c7e92104d8e9b284a55b/65496486cd60d3c77fe37016_pexels-roberto-hund-5356285.webp");
+  background-image: linear-gradient(42deg, rgba(202, 233, 67, .3), rgba(255, 255, 255, 0) 34%), linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/assets/images/dd.jpg");
   background-position: 0 0, 0 0, 50% 35%;
   background-size: auto, auto, cover;
   border-radius: 20px;
