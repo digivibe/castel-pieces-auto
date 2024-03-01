@@ -6211,7 +6211,7 @@ blockquote {
 .banner-section-photo {
   height: 100%;
   min-height: 680px;
-  background-image: linear-gradient(326deg, rgba(202, 233, 66, .25), rgba(255, 255, 255, 0) 30%), linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://assets-global.website-files.com/6544c7e92104d8e9b284a55b/6545454bbdbd9ec5c29bedbc_pexels-ono-kosuki-5647602.webp");
+  background-image: linear-gradient(326deg, rgba(202, 233, 66, .25), rgba(255, 255, 255, 0) 30%), linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/assets/images/hero.jpg");
   background-position: 0 0, 0 0, 50% 80%;
   background-size: auto, auto, cover;
   justify-content: center;
