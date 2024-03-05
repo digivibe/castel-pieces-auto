@@ -11,14 +11,35 @@
     <style>
         .whity {
             color: white !important;
-        }    
+        }  
+        @media screen and (min-width: 768px) {
+  body.dark-background {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Empêche le défilement sur desktop */
+  }
+
+  .pages-banner, .section {
+    flex-grow: 1;
+    overflow: auto; 
+  }
+  .section {
+    padding-top: 0;
+    margin-top: -45vh;
+  }
+  .metitle {
+    text-shadow:  4px 4px 8px rgba(0,0,0,0.5), 4px -4px 8px rgba(0,0,0,0.3);
+  }
+}  
     </style>
 </head>
 <body class="dark-background">
     <div class="pages-banner faq" style="background-image: url('/assets/images/heros.jpg');background-size: cover;">
         <div class="base-container w-container">
             <div class="banner-title-wrapper">
-                <h1 data-w-id="df6ca62a-aa8a-994d-d338-6484f99f3c60" class="banner-title">
+                <h1 data-w-id="df6ca62a-aa8a-994d-d338-6484f99f3c60" class="metitle banner-title">
                     CASTEL PIECES AUTO
                 </h1>
             </div>
@@ -26,15 +47,10 @@
     </div>
     <div class="section">
         <div class="base-container w-container">
-            <div class="section-title-wrapper wide">
-                <h2 data-w-id="f8941fc1-dca9-9a98-a8e4-d81f5318ed5d" class="section-title">
-                    Redirection vers
-                </h2>
-            </div>
             <div class="accordion-wrapper">
                 <div class="accordion-wrap">
                     <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b2a" class="accordion-item w-dropdown">
-                        <img src="/assets/images/de1.jpg" alt="">
+                        <a href="/centre-de-depollution.html" class="whity"><img src="/assets/images/de1.jpg" alt=""></a>
                         <div class="accordion-toggle w-dropdown-toggle">
                             <div class="accordion-icon">
                                 <a href="/centre-de-depollution.html" class="whity"><i class="fas fa-arrow-left"></i></a>
@@ -49,7 +65,7 @@
                 </div>
                 <div class="accordion-wrap">
                     <div data-hover="false" data-delay="0"  data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b4f" class="accordion-item w-dropdown">
-                        <img src="/assets/images/de2.jpg" alt="">
+                        <a href="/garage-atelier-mecanique.html" class="whity"><img src="/assets/images/de2.jpg" alt=""></a>
                         <div class="accordion-toggle w-dropdown-toggle">
                             <h6 class="accordion-title">
                                 <a href="/garage-atelier-mecanique.html" class="whity">
