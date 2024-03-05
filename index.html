@@ -33,27 +33,31 @@
             </div>
             <div class="accordion-wrapper">
                 <div class="accordion-wrap">
-                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b2a"
-                        class="accordion-item w-dropdown">
+                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b2a" class="accordion-item w-dropdown">
+                        <img src="/assets/images/de1.jpg" alt="">
                         <div class="accordion-toggle w-dropdown-toggle">
                             <div class="accordion-icon">
-                                <a href="/dark.html" class="whity"><i class="fas fa-arrow-left"></i></a>
+                                <a href="/centre-de-depollution.html" class="whity"><i class="fas fa-arrow-left"></i></a>
                             </div>
                             <h6 class="accordion-title">
-                                <a href="/dark.html" class="whity">Mode Sombre</a><br />
+                                <a href="/centre-de-depollution.html" class="whity" style="margin-left: 7px;">
+                                    Centre de dépollution
+                                </a><br />
                             </h6>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-wrap">
-                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b4f"
-                        class="accordion-item w-dropdown">
+                    <div data-hover="false" data-delay="0"  data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b4f" class="accordion-item w-dropdown">
+                        <img src="/assets/images/de2.jpg" alt="">
                         <div class="accordion-toggle w-dropdown-toggle">
                             <h6 class="accordion-title">
-                                <a href="/light.html" class="whity">Mode Clair</a><br />
+                                <a href="/garage-atelier-mecanique.html" class="whity">
+                                    Garage & Atelier mécanique
+                                </a><br />
                             </h6>
                             <div class="accordion-icon">
-                                <a href="/light.html" class="whity"><i class="fas fa-arrow-right"></i></a>
+                                <a href="/garage-atelier-mecanique.html" class="whity"><i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -64,8 +68,99 @@
             <div class="bg-lines-inside"></div>
         </div>
     </div>
+    <a href="/light.html" class="bouton-discrod w-inline-block">
+        <div class="animation-discord">
+            <img src="/assets/images/light.png" class="logo-whatsapp" alt="Logo">
+        </div>
+    </a>
+    <style>
+        .bouton-discrod {
+            background-color: rgba(150, 150, 150, 0.2) !important;
+            backdrop-filter: blur(5px) !important;
+            width: 10vh;
+            height: 10vh;
+            z-index: 1000000000000000000000000000;
+            border-radius: 500px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: fixed;
+            top: auto;
+            bottom: 7vh;
+            left: auto;
+            right: 7vw;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .animation-discord {
+            width: 65%;
+            height: 65%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .animation-discord img {
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+            border: 0;
+            box-sizing: border-box;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+
+        @keyframes regarderAutour {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+                /* Centre */
+            }
+
+            12.5% {
+                transform: translate(-10px, -10px);
+                /* Nord-ouest */
+            }
+
+            25% {
+                transform: translate(0, 0);
+                /* Centre */
+            }
+
+            37.5% {
+                transform: translate(-10px, 10px);
+                /* Sud-ouest */
+            }
+
+            50% {
+                transform: translate(0, 0);
+                /* Centre */
+            }
+
+            62.5% {
+                transform: translate(10px, 10px);
+                /* Sud-est */
+            }
+
+            75% {
+                transform: translate(0, 0);
+                /* Centre */
+            }
+
+            87.5% {
+                transform: translate(10px, -10px);
+                /* Nord-est */
+            }
+        }
+
+        .logo-whatsapp {
+            animation: regarderAutour 12s infinite;
+        }
+    </style>
     <script src="/assets/js/all.min.js"></script>
     <script src="/assets/js/jquery.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="/assets/js/wf.js" type="text/javascript"></script>
+
 </body>
 </html>
