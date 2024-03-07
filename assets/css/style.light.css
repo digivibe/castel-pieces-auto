@@ -4055,7 +4055,7 @@ blockquote {
 
 .pages-banner.services {
   min-height: 400px;
-  background-image: linear-gradient(rgba(27, 27, 27, .4), rgba(27, 27, 27, .4)), url("https://assets-global.website-files.com/6544c7e92104d8e9b284a55b/656f3f2cddfd83413f19e16a_pexels-chikinbun-14463428.webp");
+  /* background-image: linear-gradient(rgba(27, 27, 27, .4), rgba(27, 27, 27, .4)), url("https://assets-global.website-files.com/6544c7e92104d8e9b284a55b/656f3f2cddfd83413f19e16a_pexels-chikinbun-14463428.webp"); */
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
