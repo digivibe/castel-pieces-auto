@@ -1,0 +1,8 @@
+.featuresWrap {
+    width: 50%;
+}
+@media screen and (max-width: 767px) {
+    .featuresWrap {
+        width: 100%;
+    }
+}
