@@ -1,0 +1,18 @@
+.whity {
+    color: white !important;
+}  
+.barny {
+    height: 100vh !important;
+}
+.text-primary {
+    color: #008f00
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

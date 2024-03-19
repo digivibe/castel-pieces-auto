@@ -6,56 +6,108 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     
     <link href="/assets/css/style.light.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <style>
-        .whity {
-            color: black !important;
-        }  
+        .text-white {
+            color: white;
+        }
+    </style>
+    <link href="/assets/css/my.css" rel="stylesheet" type="text/css" />
+    <style>
         @media screen and (min-width: 768px) {
-  body.dark-background {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Empêche le défilement sur desktop */
-  }
+            body.dark-background {
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                /* Empêche le défilement sur desktop */
+            }
 
-  .pages-banner, .section {
-    flex-grow: 1;
-    overflow: auto; 
-  }
-  .section {
-    padding-top: 0;
-    margin-top: -45vh;
-  }
-  .metitle {
-    margin-top: -30vh;
-    color: white;
-    text-shadow:  4px 4px 8px rgba(0,0,0,0.5), 4px -4px 8px rgba(0,0,0,0.3);
-  }
-}  
+            .pages-banner,
+            .section {
+                flex-grow: 1;
+                overflow: auto;
+            }
+
+            .section {
+                padding-top: 0;
+                margin-top: -45vh;
+            }
+
+            .metitle {
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
+            }
+            .column-two {
+                height: 70vh;
+            }
+        }
+        .column-two {
+            box-shadow: 4px 4px 8px rgb(65, 64, 64), 4px -4px 8px rgb(65, 64, 64);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 50px;
+            border-radius: 10px;
+        }
+        @font-face {
+            font-family: 'Conthrax';
+            src: url('/assets/fonts/conthrax-sb.otf') format('opentype');
+        }
+
+        .metitle {
+            font-family: 'Conthrax', sans-serif !important;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body class="dark-background">
     <div class="pages-banner faq" style="background-image: url('/assets/images/heros.jpg');background-size: cover;">
         <div class="base-container w-container">
-            <div class="banner-title-wrapper">
+            <!-- <div class="banner-title-wrapper">
                 <h1 data-w-id="df6ca62a-aa8a-994d-d338-6484f99f3c60" class="metitle banner-title">
                     CASTEL PIECES AUTO
                 </h1>
+            </div> -->
+            <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9640" class="two-column-wrapper center">
+                <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9641" class="column-two">
+                    <h2 class="in-section-title text-white text-primary metitle">
+                        Centre de dépollution
+                    </h2>
+                    <p class="no-margin text-white">
+                        Préservez l'environnement et assurez la longévité de votre véhicule avec notre Centre de Dépollution, où les dernières technologies se rencontrent avec l'expertise pour un service de qualité supérieure.
+                    </p>
+                    <div class="button-wrapper-main">
+                        <a href="/centre-de-depollution.html" class="primary-button w-button">
+                            Découvrez offre
+                        </a>
+                    </div>
+                </div>
+                <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9641" class="column-two">
+                    <h2 class="in-section-title text-white text-primary metitle">
+                        Garage & Atelier mécanique
+                    </h2>
+                    <p class="no-margin text-white">
+                        Fiez-vous à l'excellence de notre Garage & Atelier Mécanique pour tous vos besoins en entretien et réparation. Nos mécaniciens certifiés s'engagent à offrir des prestations irréprochables pour que votre véhicule soit toujours en parfait état de marche.
+                    </p>
+                    <div class="button-wrapper-main">
+                        <a href="/garage-atelier-mecanique.html" class="primary-button w-button">
+                            Explorez garage
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section">
+    <!-- <div class="section">
         <div class="base-container w-container">
             <div class="accordion-wrapper">
                 <div class="accordion-wrap">
-                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b2a" class="accordion-item w-dropdown">
-                        <a href="/centre-de-depollution.html" class="whity"><img src="/assets/images/de1.jpg" alt=""></a>
+                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b2a"
+                        class="accordion-item w-dropdown">
+                        <a href="/centre-de-depollution.html" class="whity"><img src="/assets/images/de1.jpg"
+                                alt=""></a>
                         <div class="accordion-toggle w-dropdown-toggle">
                             <div class="accordion-icon">
-                                <a href="/centre-de-depollution.html" class="whity"><i class="fas fa-arrow-left"></i></a>
+                                <a href="/centre-de-depollution.html" class="whity"><i
+                                        class="fas fa-arrow-left"></i></a>
                             </div>
                             <h6 class="accordion-title">
                                 <a href="/centre-de-depollution.html" class="whity" style="margin-left: 7px;">
@@ -66,8 +118,10 @@
                     </div>
                 </div>
                 <div class="accordion-wrap">
-                    <div data-hover="false" data-delay="0"  data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b4f" class="accordion-item w-dropdown">
-                        <a href="/garage-atelier-mecanique.html" class="whity"><img src="/assets/images/de2.jpg" alt=""></a>
+                    <div data-hover="false" data-delay="0" data-w-id="8989ee74-68aa-89b0-f9fb-c214c3221b4f"
+                        class="accordion-item w-dropdown">
+                        <a href="/garage-atelier-mecanique.html" class="whity"><img src="/assets/images/de2.jpg"
+                                alt=""></a>
                         <div class="accordion-toggle w-dropdown-toggle">
                             <h6 class="accordion-title">
                                 <a href="/garage-atelier-mecanique.html" class="whity">
@@ -75,7 +129,8 @@
                                 </a><br />
                             </h6>
                             <div class="accordion-icon">
-                                <a href="/garage-atelier-mecanique.html" class="whity"><i class="fas fa-arrow-right"></i></a>
+                                <a href="/garage-atelier-mecanique.html" class="whity"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +140,7 @@
         <div class="bg-lines">
             <div class="bg-lines-inside"></div>
         </div>
-    </div>
+    </div> -->
     <a href="/" class="bouton-discrod w-inline-block">
         <div class="animation-discord">
             <img src="/assets/images/dark.png" class="logo-whatsapp" alt="Logo">

@@ -6,13 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <link href="/assets/css/style.dark.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <link href="/assets/css/my.css" rel="stylesheet" type="text/css" />
     <style>
-        .whity {
-            color: white !important;
-        }
-
         @media screen and (min-width: 768px) {
             body.dark-background {
                 height: 100vh;
@@ -35,23 +30,68 @@
             }
 
             .metitle {
-                margin-top: -30vh;
                 text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
             }
+            .column-two {
+                height: 70vh;
+            }
+        }
+        .column-two {
+            box-shadow: 4px 4px 8px rgb(65, 64, 64), 4px -4px 8px rgb(65, 64, 64);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 50px;
+            border-radius: 10px;
+        }
+        @font-face {
+            font-family: 'Conthrax';
+            src: url('/assets/fonts/conthrax-sb.otf') format('opentype');
+        }
+
+        .metitle {
+            font-family: 'Conthrax', sans-serif !important;
+            font-size: 30px;
         }
     </style>
 </head>
 <body class="dark-background">
     <div class="pages-banner faq" style="background-image: url('/assets/images/heros.jpg');background-size: cover;">
         <div class="base-container w-container">
-            <div class="banner-title-wrapper">
+            <!-- <div class="banner-title-wrapper">
                 <h1 data-w-id="df6ca62a-aa8a-994d-d338-6484f99f3c60" class="metitle banner-title">
                     CASTEL PIECES AUTO
                 </h1>
+            </div> -->
+            <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9640" class="two-column-wrapper center">
+                <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9641" class="column-two">
+                    <h2 class="in-section-title text-white text-primary metitle">
+                        Centre de dépollution
+                    </h2>
+                    <p class="no-margin text-white">
+                        Préservez l'environnement et assurez la longévité de votre véhicule avec notre Centre de Dépollution, où les dernières technologies se rencontrent avec l'expertise pour un service de qualité supérieure.
+                    </p>
+                    <div class="button-wrapper-main">
+                        <a href="/centre-de-depollution.html" class="primary-button w-button">
+                            Découvrez offre
+                        </a>
+                    </div>
+                </div>
+                <div data-w-id="bc04704d-d71c-ba15-06cc-f8a0fcfe9641" class="column-two">
+                    <h2 class="in-section-title text-white text-primary metitle">
+                        Garage & Atelier mécanique
+                    </h2>
+                    <p class="no-margin text-white">
+                        Fiez-vous à l'excellence de notre Garage & Atelier Mécanique pour tous vos besoins en entretien et réparation. Nos mécaniciens certifiés s'engagent à offrir des prestations irréprochables pour que votre véhicule soit toujours en parfait état de marche.
+                    </p>
+                    <div class="button-wrapper-main">
+                        <a href="/garage-atelier-mecanique.html" class="primary-button w-button">
+                            Explorez garage
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section">
+    <!-- <div class="section">
         <div class="base-container w-container">
             <div class="accordion-wrapper">
                 <div class="accordion-wrap">
@@ -95,7 +135,7 @@
         <div class="bg-lines">
             <div class="bg-lines-inside"></div>
         </div>
-    </div>
+    </div> -->
     <a href="/light.html" class="bouton-discrod w-inline-block">
         <div class="animation-discord">
             <img src="/assets/images/light.png" class="logo-whatsapp" alt="Logo">
