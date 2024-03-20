@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-// import "@/styles/Tailwind.css"
+import "@/styles/Tailwind.css"
 import "@/styles/Global.css"
 import "@/styles/My.css"
 

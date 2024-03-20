@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Lenis from '@studio-freight/lenis';
-
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ServicesSection() {
+import styles from "@/styles/OfferSections.module.css"
+
+export default function OfferSections() {
     const verticalLine4 = useRef(null);
     const verticalLine5 = useRef(null);
     const verticalLine6 = useRef(null);
@@ -45,9 +46,8 @@ export default function ServicesSection() {
             }
         }
     }, []);
-
     return (
-        <div ref={sectionRef} className="lg:h-screen w-screen flex flex-col lg:sticky lg:top-0">
+        <div id="four" className={`${styles.four} lg:h-screen w-screen flex flex-col lg:sticky lg:top-0`}>
             <div className="px-4 pt-12 lg:pl-36 flex flex-col">
                 <div className="relative md:mb-20 md:ml-10">
                     <span className="text-outline-gray text-transparent absolute top-3 lg:top-0 font-bold text-[7rem] md:text-[10rem] lg:text-[14rem] opacity-10 leading-none">Services</span>
@@ -85,5 +85,5 @@ export default function ServicesSection() {
                 </div>
             </div>
         </div>
-    );
+    )
 }

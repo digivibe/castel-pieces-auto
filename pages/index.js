@@ -1,10 +1,31 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import gsap from 'gsap/dist/gsap'
 
 import styles from "@/styles/Index.module.css"
 import { APP_NAME, CANONICAL } from '../libs/constants'
 
 function Home() {
+    useEffect(() => {
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } })
+        tl.fromTo(`.${styles.columnTwo}`, 
+            { y: 30, opacity: 0 },
+            { duration: 1, y: 0, opacity: 1, stagger: 0.3 },
+        )
+        .fromTo(".in-section-title",
+            { x: -100, opacity: 0 },
+            { duration: 1, x: 0, opacity: 1 }, "-=0.75"
+        )
+        .fromTo(".no-margin",
+            { x: 100, opacity: 0 },
+            { duration: 1, x: 0, opacity: 1 }, "-=0.75"
+        )
+        .fromTo(".primary-button",
+            { scale: 0.5, opacity: 0 },
+            { duration: 0.5, scale: 1, opacity: 1, ease: "back.out(1.7)" }, "-=0.5"
+        )
+    }, [])
 
     return (
         <>
