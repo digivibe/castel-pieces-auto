@@ -1,6 +1,6 @@
 /* Optimisation des propriétés globales et ajout de structures de grille */
 .darkBackground {
-    background: url("/images/hero.jpg") center / contain no-repeat fixed;
+    background: url("/images/hero.jpg") center / cover no-repeat fixed;
     height: 100vh;
 }
 
