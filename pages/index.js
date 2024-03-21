@@ -10,18 +10,18 @@ function Home() {
     useEffect(() => {
         const tl = gsap.timeline({ defaults: { ease: "power1.out" } })
         tl.fromTo(`.${styles.columnTwo}`, 
-            { y: 30, opacity: 0 },
-            { duration: 1, y: 0, opacity: 1, stagger: 0.3 },
+            { y: 50, opacity: 0, rotationX: -45, transformPerspective: 1000 },
+            { duration: 1, y: 0, opacity: 1, rotationX: 0, stagger: 0.2 }
         )
-        .fromTo(".in-section-title",
+        tl.fromTo(".in-section-title",
             { x: -100, opacity: 0 },
             { duration: 1, x: 0, opacity: 1 }, "-=0.75"
         )
-        .fromTo(".no-margin",
+        tl.fromTo(".no-margin",
             { x: 100, opacity: 0 },
             { duration: 1, x: 0, opacity: 1 }, "-=0.75"
         )
-        .fromTo(".primary-button",
+        tl.fromTo(".primary-button",
             { scale: 0.5, opacity: 0 },
             { duration: 0.5, scale: 1, opacity: 1, ease: "back.out(1.7)" }, "-=0.5"
         )

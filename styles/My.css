@@ -16,3 +16,6 @@
     from { opacity: 1; }
     to { opacity: 0; }
 }
+.section {
+    opacity: 1 !important;
+}
