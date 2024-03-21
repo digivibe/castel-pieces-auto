@@ -42,8 +42,8 @@ export default function Banner0() {
     return (
         <div className={`flex justify-center items-center h-screen ${styles.darkBackground}`}>
             <div className="flex flex-wrap items-center justify-center h-full md:justify-between">
-                <div className={`flex flex-col justify-center w-full md:w-1/2 md:items-center ${styles.mm2} ${styles.textleft} mx-4`}>
-                    <h1 data-w-id="4fd1001e-0883-42e7-af04-a12016ec15d7">
+                <div className={`flex flex-col justify-center w-full md:w-1/2 md:items-center ${styles.mm2} ${styles.textleft}`}>
+                    <h1 data-w-id="4fd1001e-0883-42e7-af04-a12016ec15d7" className='mx-4'>
                         <a href="/centre-de-depollution" className={styles.textwhity}>Centre de dépollution</a>
                     </h1>
                     <a href="/centre-de-depollution">
@@ -87,8 +87,8 @@ export default function Banner0() {
                         </div>
                     </a>
                 </div>
-                <div className={`flex flex-col justify-center items-end w-full md:w-1/2 md:items-center ${styles.mm2} mx-4`}>
-                    <h1 data-w-id="4fd1001e-0883-42e7-af04-a12016ec15d7" className={`home-title ${styles.textright}`}>
+                <div className={`flex flex-col justify-center items-end w-full md:w-1/2 md:items-center ${styles.mm2}`}>
+                    <h1 data-w-id="4fd1001e-0883-42e7-af04-a12016ec15d7" className={`home-title mx-4 ${styles.textright}`}>
                         <a href="/garage-atelier-mecanique" className={styles.textwhity}>Atelier mécanique</a>
                     </h1>
                     <a href="/garage-atelier-mecanique">
