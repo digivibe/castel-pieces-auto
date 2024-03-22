@@ -19,7 +19,7 @@
 .section {
     opacity: 1 !important;
 }
-body {
+body, .bgblack {
     background-color: #1b1b1b !important;
 }
 html,

@@ -9,13 +9,12 @@
             </section>
             <OfferSections />
         </div>
-        <section class="lg:h-[201vh] bg-white">
+        <section class="lg:h-[201vh]">
             <div ref="sectionFour" id="four" class="lg:h-screen w-screen flex flex-col lg:sticky lg:top-0">
                 <div class="px-4 pt-12 lg:pl-36 flex flex-col">
                     <div class="relative md:mb-20 md:ml-10">
-                        <span
-                            class="text-outline-gray text-transparent absolute top-3 lg:top-0 font-bold text-[7rem] md:text-[10rem] lg:text-[14rem] opacity-10 leading-none">Services</span>
-                        <h2 class="text-[2.5rem] md:text-[3rem] lg:font-semibold py-10 lg:py-20 text-gray-700">
+                        <span class="text-outline-gray text-transparent absolute top-3 lg:top-0 font-bold text-[7rem] md:text-[10rem] lg:text-[14rem] opacity-10 leading-none">Services</span>
+                        <h2 class="text-[2.5rem] md:text-[3rem] lg:font-semibold py-10 lg:py-20 whity">
                             Nos services
                         </h2>
                     </div>
@@ -28,7 +27,7 @@
                                     class="lg:w-[2px] lg:h-0 w-[10vw] md:w-[200px] h-[2px] bg-gray-700"></div>
                                 <div class="w-3 h-3 bg-gray-700"></div>
                                 <span ref="brandingTag"
-                                    class="font-semibold lg:font-bold text-[1.5rem] md:text-[2rem] lg:text-[2rem] text-gray-700 text-center lg:opacity-0">Aide
+                                    class="font-semibold whity">Aide
                                     au déménagement</span>
                             </div>
                             <div class="flex lg:flex-col items-center lg:justify-center">
@@ -36,7 +35,7 @@
                                     class="lg:w-[2px] lg:h-0 w-[30vw] md:w-[300px] h-[2px] bg-gray-700"></div>
                                 <div ref="cube6" class="bg-gray-700 w-3 h-3 lg:h-0"></div>
                                 <span ref="motionTag"
-                                    class="font-semibold lg:font-bold text-[1.5rem] md:text-[2rem] lg:text-[2rem] text-gray-700 text-center lg:opacity-0">Débarras
+                                    class="font-semibold whity">Débarras
                                     de locaux</span>
                             </div>
                         </div>
@@ -47,7 +46,7 @@
                                     class="lg:w-[2px] lg:h-0 w-[50vw] md:w-[400px] h-[2px] bg-gray-700"></div>
                                 <div class="w-3 h-3 bg-gray-700"></div>
                                 <span ref="strategyTag"
-                                    class="font-semibold lg:font-bold text-[1.5rem] md:text-[2rem] lg:text-[2rem] text-gray-700 text-center lg:opacity-0">Vide
+                                    class="font-semibold whity">Vide
                                     maison</span>
                             </div>
                             <div class="flex lg:flex-col items-center lg:justify-center">
@@ -55,7 +54,7 @@
                                     class="lg:w-[2px] lg:h-0 w-[65vw] md:w-[500px] h-[2px] bg-gray-700"></div>
                                 <div ref="cube7" class="bg-gray-700 w-3 h-3 lg:h-0"></div>
                                 <span ref="marketingTag"
-                                    class="font-semibold lg:font-bold text-[1.5rem] md:text-[2rem] lg:text-[2rem] text-gray-700 text-center lg:opacity-0">Tri
+                                    class="font-semibold whity">Tri
                                     et Recyclage</span>
                             </div>
                         </div>

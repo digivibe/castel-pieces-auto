@@ -1,6 +1,5 @@
 <template>
-    <div ref="sectionThree" id="three"
-        class="lg:h-screen w-screen flex flex-col lg:flex-row items-center gap-[50px] lg:gap-[300px] bg-gray-900 h-scroll-section border-b-2 border-gray-700">
+    <div ref="sectionThree" id="three" class="lg:h-screen w-screen flex flex-col lg:flex-row items-center gap-[50px] lg:gap-[300px] bg-gray-900 h-scroll-section border-b-2 border-gray-700">
         <div class="lg:pl-36 mt-10 relative">
             <h2 class="text-white text-[2.5rem] lg:text-[3rem] font-bold m-12 lg:m-24">
                 Nos offres
