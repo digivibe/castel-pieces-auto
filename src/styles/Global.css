@@ -3945,6 +3945,7 @@ html {
   
   .nav-link {
     color: var(--white);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
     padding: 20px 15px;
     font-size: 15px;
   }

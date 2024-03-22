@@ -17,22 +17,20 @@
     width: 100%;
     height: 100vh;
     background-image: url("/images/hero.jpg");
-    background-position: left center; /* Ajusté pour couvrir l'écran */
-    background-size: cover; /* S'assure que l'image couvre l'espace */
+    background-position: left center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: blur(2px); /* Ajustez le niveau de flou selon vos préférences */
-    z-index: -1; /* S'assure que le flou est en arrière-plan */
+    filter: blur(1px);
+    z-index: -1;
 }
 
-/* Pour assurer la compatibilité de positionnement */
 .darkBackground {
     position: relative;
     height: 100vh;
-    overflow: hidden; /* Cache les débordements causés par le flou */
+    overflow: hidden;
 }
 
-/* Image en mode container (exemple si vous utilisez une balise <img>) */
 .containerImage {
     position: relative; /* Ajustez selon la disposition souhaitée */
     max-width: 100%; /* Empêche l'image de déborder de son conteneur */
