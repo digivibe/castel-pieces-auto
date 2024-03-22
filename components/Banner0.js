@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import Image from 'next/image';
+import { gsap } from 'gsap';
 
-import styles from '@/styles/Banner0.module.css'
+import styles from '@/styles/Banner0.module.css';
 
 export default function Banner0() {
     useEffect(() => {
-        const arrowContainers = document.querySelectorAll('.arrows-animated-wrapper');
 
+        const arrowContainers = document.querySelectorAll('.arrows-animated-wrapper');
         const delayBetweenArrows = 200;
         const stayLitDuration = 600;
 
         const animateArrows = (arrows, isReversed) => {
-            // Inverser l'ordre des flèches si nécessaire
             const arrowsToAnimate = isReversed ? Array.from(arrows).reverse() : arrows;
 
             arrowsToAnimate.forEach((arrow, index) => {
@@ -28,16 +28,11 @@ export default function Banner0() {
             }, arrowsToAnimate.length * delayBetweenArrows + stayLitDuration);
         };
 
-        // Supposer que le premier groupe est le premier conteneur de flèches
-        const firstGroupArrows = arrowContainers[0].querySelectorAll('img');
-        // Supposer que le second groupe est le second conteneur de flèches
-        const secondGroupArrows = arrowContainers[1].querySelectorAll('img');
-
-        // Animer le premier groupe avec inversion
-        animateArrows(firstGroupArrows, true);
-        // Animer le second groupe sans inversion
-        animateArrows(secondGroupArrows, false);
-    }, [])
+        const firstGroupArrows = arrowContainers[0]?.querySelectorAll('img');
+        const secondGroupArrows = arrowContainers[1]?.querySelectorAll('img');
+        if (firstGroupArrows) animateArrows(firstGroupArrows, true);
+        if (secondGroupArrows) animateArrows(secondGroupArrows, false);
+    }, []);
 
     return (
         <div className={`flex justify-center items-center h-screen ${styles.darkBackground}`}>
