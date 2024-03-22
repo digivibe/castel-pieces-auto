@@ -1,5 +1,5 @@
 <template>
-    <div :class="`flex justify-center items-center h-screen ${darkBackground}`">
+    <div :class="`banner-section-photo `">
         <div class="banner-content-container left-align">
             <div class="arrows-animated-wrapper">
                 <img v-for="index in 4" :key="`arrow-animated-${index}`" src="/images/arrow-outlone.svg" loading="lazy"

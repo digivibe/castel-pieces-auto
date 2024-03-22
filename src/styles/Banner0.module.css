@@ -9,33 +9,15 @@
     transform: rotateZ(180deg);
 }
 
-.darkBackground::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.darkBackground {
+    position: relative;
     height: 100vh;
+    overflow: hidden;
     background-image: url("/images/hero.jpg");
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* filter: blur(1px); */
-    z-index: -1;
-}
-
-.darkBackground {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.containerImage {
-    position: relative; /* Ajustez selon la disposition souhaitée */
-    max-width: 100%; /* Empêche l'image de déborder de son conteneur */
-    z-index: 1; /* S'assure que l'image est au-dessus de l'arrière-plan flou */
-    /* Autres styles selon vos besoins */
 }
 
 @media screen and (min-width: 768px) {
