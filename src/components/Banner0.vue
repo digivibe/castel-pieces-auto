@@ -2,7 +2,7 @@
     <div :class="`flex justify-center items-center h-screen ${darkBackground}`">
         <div class="flex flex-wrap items-center justify-center h-full md:justify-between">
             <div :class="`flex flex-col justify-center w-full md:w-1/2 md:items-center ${mm2} ${textleft}`">
-                <h1 :class="`home-title mx-4 ${textright}`">
+                <h1 :class="`home-title mx-4 ${textleft}`">
                     <a href="/centre-de-depollution" :class="textwhity">Centre de dépollution</a>
                 </h1>
                 <a href="/centre-de-depollution">
