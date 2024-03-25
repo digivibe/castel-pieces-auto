@@ -2,7 +2,7 @@
     <div :class="`banner-section-photo `">
         <div class="flex flex-wrap items-center justify-center h-full md:justify-between">
             <div :class="`flex flex-col justify-center w-full md:w-1/2 md:items-center ${mm2} ${textleft}`">
-                <h1 :class="`home-title mx-4 ${textleft}`">
+                <h1 :class="`text-6xl font-bold leading-tight mx-4 ${textleft}`">
                     <a href="/centre-de-depollution" :class="textwhity">Centre de dépollution</a>
                 </h1>
                 <a href="/centre-de-depollution">
@@ -23,8 +23,8 @@
                 </a>
             </div>
             <div :class="`flex flex-col justify-center items-end w-full md:w-1/2 md:items-center ${mm2}`">
-                <h1 :class="`home-title mx-4 ${textright}`">
-                    <a href="/garage-atelier-mecanique" :class="`${textwhity}`">Atelier mécanique</a>
+                <h1 :class="`text-6xl font-bold leading-tight mx-4 ${textright}`">
+                    <a href="/garage-atelier-mecanique" :class="`${textwhity}`">Garage & Atelier mécanique</a>
                 </h1>
                 <a href="/garage-atelier-mecanique">
                     <div class="arrows-animated-wrapper">

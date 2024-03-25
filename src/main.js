@@ -1,6 +1,6 @@
-import "./styles/Tailwind.css"
 import "./styles/Global.css"
 import "./styles/My.css"
+import "./styles/Tailwind.css"
 
 import { createApp } from 'vue'
 import App from './App.vue'
