@@ -24,7 +24,7 @@
             </div>
             <div :class="`flex flex-col justify-center items-end w-full md:w-1/2 md:items-center ${mm2}`">
                 <h1 :class="`text-5xl font-bold leading-tight mx-4 ${textright}`">
-                    <a href="/garage-atelier-mecanique" :class="`${textwhity}`">Garage & Atelier mécanique</a>
+                    <a href="/garage-atelier-mecanique" :class="`${textwhity}`">Atelier mécanique</a>
                 </h1>
                 <a href="/garage-atelier-mecanique">
                     <div class="arrows-animated-wrapper">
