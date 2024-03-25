@@ -82,321 +82,323 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import { useHead } from '@vueuse/head';
-import Header from '../components/Header.vue'
-import Banner1 from '../components/Banner1.vue'
-import Section2 from '../components/Section1.2.vue'
-import Section3 from '../components/Section1.3.vue'
-import SectionDevis from '../components/SectionDevis.vue'
-import Footer from '../components/Footer.vue'
-import { APP_NAME, CANONICAL } from '../libs/constants'
+    import { ref, onMounted } from "vue"
+    import { useHead } from '@vueuse/head'
+    import Lenis from "@studio-freight/lenis"
+    import { gsap } from "gsap"
+    import ScrollTrigger from "gsap/ScrollTrigger"
 
-const appName = APP_NAME;
 
-useHead({
-    title: `Centre de dépollution - ${appName}`,
-    meta: [
-        { name: 'robots', content: 'index, follow' },
-        { name: 'canonical', href: `${CANONICAL}/centre-de-depollution` },
-    ],
-});
+    import AboutSection from "../components/c/AboutSection.vue"
+    import OfferSections from "../components/c/OfferSections.vue"
+    import Header from '../components/Header.vue'
+    import Banner1 from '../components/Banner1.vue'
+    import Section2 from '../components/Section1.2.vue'
+    import Section3 from '../components/Section1.3.vue'
+    import SectionDevis from '../components/SectionDevis.vue'
+    import Footer from '../components/Footer.vue'
+    import { APP_NAME, CANONICAL } from '../libs/constants'
 
-const animateArrows = () => {
-    const arrows = document.querySelectorAll('.arrows-animated-wrapper > img');
-    const delayBetweenArrows = 200;
-    const stayLitDuration = 600;
+    const appName = APP_NAME
 
-    arrows.forEach((arrow, index) => {
+    useHead({
+        title: `Centre de dépollution - ${appName}`,
+        meta: [
+            { name: 'robots', content: 'index, follow' },
+            { name: 'canonical', href: `${CANONICAL}/centre-de-depollution` },
+        ],
+    })
+
+    const animateArrows = () => {
+        const arrows = document.querySelectorAll('.arrows-animated-wrapper > img')
+        const delayBetweenArrows = 200
+        const stayLitDuration = 600
+
+        arrows.forEach((arrow, index) => {
+            setTimeout(() => {
+                arrow.style.animation = `fadeIn 0.5s forwards`
+            }, index * delayBetweenArrows)
+        })
+
         setTimeout(() => {
-            arrow.style.animation = `fadeIn 0.5s forwards`;
-        }, index * delayBetweenArrows);
-    });
-
-    setTimeout(() => {
-        arrows.forEach((arrow) => {
-            arrow.style.animation = `fadeOut 0.5s forwards`;
-        });
-        setTimeout(animateArrows, arrows.length * delayBetweenArrows + stayLitDuration + 500);
-    }, arrows.length * delayBetweenArrows + stayLitDuration);
-};
-
-onMounted(() => {
-    animateArrows();
-});
-import AboutSection from "../components/c/AboutSection.vue";
-import OfferSections from "../components/c/OfferSections.vue";
-
-import Lenis from "@studio-freight/lenis";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-
-const sectionFour = ref(null);
-const verticalLine4 = ref(null);
-const verticalLine5 = ref(null);
-const verticalLine6 = ref(null);
-const verticalLine7 = ref(null);
-const cube6 = ref(null);
-const cube7 = ref(null);
-const brandingTag = ref(null);
-const strategyTag = ref(null);
-const motionTag = ref(null);
-const marketingTag = ref(null);
-const indicator2 = ref(null);
-
-
-const desktop = window.matchMedia("(min-width: 992px)");
-
-onMounted(() => {
-    //Lenis smooth scroll
-
-    const lenis = new Lenis();
-
-    lenis.on("scroll", (e) => {
-        console.log(e);
-    });
-
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
+            arrows.forEach((arrow) => {
+                arrow.style.animation = `fadeOut 0.5s forwards`
+            })
+            setTimeout(animateArrows, arrows.length * delayBetweenArrows + stayLitDuration + 500)
+        }, arrows.length * delayBetweenArrows + stayLitDuration)
     }
 
-    requestAnimationFrame(raf);
+    const sectionFour = ref(null)
+    const verticalLine4 = ref(null)
+    const verticalLine5 = ref(null)
+    const verticalLine6 = ref(null)
+    const verticalLine7 = ref(null)
+    const cube6 = ref(null)
+    const cube7 = ref(null)
+    const brandingTag = ref(null)
+    const strategyTag = ref(null)
+    const motionTag = ref(null)
+    const marketingTag = ref(null)
+    const indicator2 = ref(null)
 
-    //gsap scroll trigger part
-    gsap.registerPlugin(ScrollTrigger);
 
-    const hSrollSections = gsap.utils.toArray(".h-scroll-section");
+    const desktop = window.matchMedia("(min-width: 992px)")
 
+    onMounted(() => {
 
-    //Desktop scrollTrigger animations
-
-    if (desktop.matches) {
-        gsap.to(hSrollSections, {
-            xPercent: -100 * (hSrollSections.length - 1),
-            ease: "none",
+        gsap.to(".offerSection", {
             scrollTrigger: {
                 trigger: "#scrollContainer",
-                pin: true,
+                start: "top top",
+                end: "bottom bottom",
                 scrub: true,
-                // snap: 1 / (hSrollSections.length - 1),
-                end: () => "+=" + document.querySelector("#scrollContainer").offsetWidth,
             },
+            transform: "translateZ(0px) rotateY(0deg)",
+            transform: "translateZ(150px) rotateY(45deg)",
+            ease: "none",
         });
+        animateArrows()
+        const lenis = new Lenis()
 
-        const timeline11 = gsap.timeline({
-            scrollTrigger: {
-                trigger: sectionFour.value,
-                start: "top 75%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+        lenis.on("scroll", (e) => {
+            console.log(e)
+        })
 
-        const timeline12 = gsap.timeline({
-            scrollTrigger: {
-                trigger: sectionFour.value,
-                start: "top 75%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
 
-        const timeline13 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top bottom",
-                end: "top 80%",
-                scrub: true,
-                markers: false,
-            },
-        });
+        requestAnimationFrame(raf)
 
-        const timeline14 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 79%",
-                end: "top 60%",
-                scrub: true,
-                markers: false,
-            },
-        });
+        gsap.registerPlugin(ScrollTrigger)
 
-        const timeline15 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 79%",
-                end: "top 60%",
-                scrub: true,
-                markers: false,
-            },
-        });
+        const hSrollSections = gsap.utils.toArray(".h-scroll-section")
 
-        const timeline16 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 79%",
-                end: "top 60%",
-                scrub: true,
-                markers: false,
-            },
-        });
+        if (desktop.matches) {
+            gsap.to(hSrollSections, {
+                xPercent: -100 * (hSrollSections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: "#scrollContainer",
+                    pin: true,
+                    scrub: true,
+                    end: () => "+=" + document.querySelector("#scrollContainer").offsetWidth,
+                },
+            })
 
-        const timeline17 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 79%",
-                end: "top 40%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline11 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionFour.value,
+                    start: "top 75%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline18 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 59%",
-                end: "top 55%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline12 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionFour.value,
+                    start: "top 75%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline19 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 59%",
-                end: "top 55%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline13 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top bottom",
+                    end: "top 80%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline20 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 58%",
-                end: "top 40%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline14 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 79%",
+                    end: "top 60%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline21 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 58%",
-                end: "top 40%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline15 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 79%",
+                    end: "top 60%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline22 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 58%",
-                end: "top 40%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline16 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 79%",
+                    end: "top 60%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline23 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 58%",
-                end: "top 40%",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline17 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 79%",
+                    end: "top 40%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline24 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 39%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline18 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 59%",
+                    end: "top 55%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline25 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 39%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline19 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 59%",
+                    end: "top 55%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline26 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 39%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline20 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 58%",
+                    end: "top 40%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        const timeline27 = gsap.timeline({
-            scrollTrigger: {
-                trigger: indicator2.value,
-                start: "top 39%",
-                end: "top top",
-                scrub: true,
-                markers: false,
-            },
-        });
+            const timeline21 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 58%",
+                    end: "top 40%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline11.to(verticalLine4.value, { height: "103vh" });
+            const timeline22 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 58%",
+                    end: "top 40%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline12.to(verticalLine5.value, { height: "92vh" });
+            const timeline23 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 58%",
+                    end: "top 40%",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline13.to(verticalLine5.value, { height: "103vh" });
+            const timeline24 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 39%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline14.to(verticalLine4.value, { height: "92vh" });
+            const timeline25 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 39%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline15.to(verticalLine5.value, { height: "71vh" });
+            const timeline26 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 39%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline16.to(brandingTag.value, { opacity: 1 });
+            const timeline27 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: indicator2.value,
+                    start: "top 39%",
+                    end: "top top",
+                    scrub: true,
+                    markers: false,
+                },
+            })
 
-        timeline17.to(strategyTag.value, { opacity: 1 });
+            timeline11.to(verticalLine4.value, { height: "103vh" })
 
-        timeline18.to(cube6.value, { height: "12px" });
+            timeline12.to(verticalLine5.value, { height: "92vh" })
 
-        timeline19.to(cube7.value, { height: "12px" });
+            timeline13.to(verticalLine5.value, { height: "103vh" })
 
-        timeline20.to(verticalLine4.value, { height: "70vh" });
+            timeline14.to(verticalLine4.value, { height: "92vh" })
 
-        timeline21.to(verticalLine6.value, { height: "22vh" });
+            timeline15.to(verticalLine5.value, { height: "71vh" })
 
-        timeline22.to(verticalLine5.value, { height: "49vh" });
+            timeline16.to(brandingTag.value, { opacity: 1 })
 
-        timeline23.to(verticalLine7.value, { height: "22vh" });
+            timeline17.to(strategyTag.value, { opacity: 1 })
 
-        timeline24.to(verticalLine4.value, { height: "40vh" });
+            timeline18.to(cube6.value, { height: "12px" })
 
-        timeline25.to(verticalLine5.value, { height: "19vh" });
+            timeline19.to(cube7.value, { height: "12px" })
 
-        timeline26.to(motionTag.value, { opacity: 1 });
+            timeline20.to(verticalLine4.value, { height: "70vh" })
 
-        timeline27.to(marketingTag.value, { opacity: 1 });
-    }
-});
+            timeline21.to(verticalLine6.value, { height: "22vh" })
+
+            timeline22.to(verticalLine5.value, { height: "49vh" })
+
+            timeline23.to(verticalLine7.value, { height: "22vh" })
+
+            timeline24.to(verticalLine4.value, { height: "40vh" })
+
+            timeline25.to(verticalLine5.value, { height: "19vh" })
+
+            timeline26.to(motionTag.value, { opacity: 1 })
+
+            timeline27.to(marketingTag.value, { opacity: 1 })
+        }
+    })
 </script>
 
 <style scoped>
-@media (max-width: 992px) {
+    @media (max-width: 992px) {
 
-    #four {
-        overflow-x: hidden;
+        #four {
+            overflow-x: hidden
+        }
     }
-}
 </style>

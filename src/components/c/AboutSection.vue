@@ -52,7 +52,7 @@
         </div>
         <div class="lg:w-1/2 px-4 md:px-8 lg:px-24 pb-16">
             <span class="py-10 mt-4 text-lg block font-thin text-white">
-                Bienvenue chez <span class="font-bold">Castel Pièces Auto</span>, votre destination privilégiée pour tous vos besoins automobiles. Au cœur de notre mission se trouve une promesse : offrir un service exceptionnel, que vous cherchiez à entretenir votre véhicule, à le réparer ou à trouver des pièces de rechange de qualité.
+                Bienvenue chez <span class="font-bold">Castel Pièces Auto</span>, votre destination privilégiée pour tous vos besoins automobiles.
             </span>
             <button class="bg-white text-lg text-black px-6 py-3 rounded-3xl font-bold">
                 En savoir plus
