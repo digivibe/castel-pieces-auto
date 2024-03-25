@@ -6,7 +6,7 @@
         </video>
         <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10">
             <div class="text-center">
-                <h1 :class="`text-white text-6xl font-bold leading-tight ${textwhity}`">
+                <h1 :class="`text-white text-5xl font-bold leading-tight ${textwhity}`">
                     Atelier Mécanique Toutes Marques
                 </h1>
             </div>

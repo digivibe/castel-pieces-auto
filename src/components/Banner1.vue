@@ -5,7 +5,7 @@
                 <img v-for="index in 4" :key="`arrow-animated-${index}`" src="/images/arrow-outlone.svg" loading="lazy"
                     alt="icon" class="arrow-animated" width="67" height="84" style="display: inline-block;" />
             </div>
-            <h1 :class="`text-6xl font-bold leading-tight ${textwhity}`">
+            <h1 :class="`text-5xl font-bold leading-tight ${textwhity}`">
                 Votre Solution Automobile Tout-en-un
             </h1>
             <p class="home-main-banner-discription">
