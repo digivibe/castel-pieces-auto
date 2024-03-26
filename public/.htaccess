@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Redirection pour /centre-de-depollution
-RewriteRule ^centre-de-depollution$ centre.html [L]
-
-# Redirection par défaut pour toutes les autres requêtes vers index.html
-RewriteCond %{REQUEST_URI} !^/centre$
-RewriteRule . /index.html [L]
