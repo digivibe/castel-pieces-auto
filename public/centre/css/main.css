@@ -2392,7 +2392,7 @@ p {
 }
 
 .wide-container.about-hero {
-    background-image: url(https://assets-global.website-files.com/62cbb076a33caa282db986ef/62e785d52f9d22491d0fbd21_32.webp);
+    background-image: url("/centre/images/img32.webp");
     background-position: 0 0;
     background-size: auto;
     padding-left: 0;
@@ -2421,7 +2421,6 @@ p {
 }
 
 .wide-container.contact-us {
-    background-image: url(https://assets-global.website-files.com/62cbb076a33caa282db986ef/62e789d0e1a61c35700465fe_EZIO%20-%20Website%20Background%20Images%20\(2000%20%C3%97%202000%20px\).webp);
     background-position: 0 0;
     flex: 0 auto;
     justify-content: flex-start;
