@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import CentreDepollutionView from '../views/CentreDepollutionView.vue'
+import CentreDepollutionView from '../views/CentreDepollutionView.vue'
 import AtelierMecaniqueView from '../views/AtelierMecaniqueView.vue'
 
 const router = createRouter({
@@ -11,11 +11,11 @@ const router = createRouter({
             name: 'home',
             component: HomeView
         },
-        // {
-        //     path: '/centre-de-depollution',
-        //     name: 'cenreDepollution',
-        //     component: CentreDepollutionView
-        // },
+        {
+            path: '/jus',
+            name: 'cenreDepollution',
+            component: CentreDepollutionView
+        },
         {
             path: '/garage-atelier-mecanique',
             name: 'atelierMecanique',
