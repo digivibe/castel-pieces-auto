@@ -1,1 +1,13 @@
-/*    /index.html   200
+server {
+    ...
+    
+    # Redirection spécifique pour /centre
+    location = /centre-de-depollution {
+        try_files /centre.html =404;
+    }
+    
+    # Redirection par défaut pour toutes les autres requêtes vers index.html
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
