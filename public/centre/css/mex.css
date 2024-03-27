@@ -33,11 +33,9 @@
     animation: bounce-animation 2s infinite;
     z-index: 9000000;
     color: blanchedalmond;
-    padding-top: 9px;
-    padding-bottom: 9px;
 }
 .envelopeb {
-    animation: pulse-animation 4s infinite;
+    animation: pulse-animation 1s infinite;
 }
 
 @keyframes pulse-animation {
