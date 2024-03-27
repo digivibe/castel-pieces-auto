@@ -1,0 +1,82 @@
+/* Style du bouton avec effet de pulsation */
+.widget-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #033110;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    animation: pulse-animation 2s infinite;
+    z-index: 9000000;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(3, 49, 16, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(3, 49, 16, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(3, 49, 16, 0);
+    }
+}
+
+.widget-button img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.widget-button:hover img {
+    transform: scale(1.1);
+}
+
+.popup-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow-y: auto;
+    max-height: 90%;
+}
+
+.popup-box.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.select-field.w-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button.w-button {
+    background-color: #033110;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
