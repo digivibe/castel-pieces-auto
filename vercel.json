@@ -1,16 +1,5 @@
 {
-    "version": 2,
-    "routes": [
-        {
-            "src": "/centre-de-depollution",
-            "dest": "/centre.html",
-            "status": 200
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html",
-            "status": 200
-        }
-    ],
-    "cleanUrls": true
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
+    ]
 }
