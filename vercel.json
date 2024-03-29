@@ -1,5 +1,14 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
+    "version": 2,
+    "routes": [
+      {
+        "src": "/centre-de-depollution",
+        "dest": "/centre.html"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
