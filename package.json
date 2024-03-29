@@ -13,6 +13,7 @@
     "@studio-freight/lenis": "^1.0.34",
     "@vueuse/head": "^2.0.0",
     "flowbite": "^2.2.1",
+    "fs": "^0.0.1-security",
     "gsap": "^3.12.5",
     "path": "^0.12.7",
     "vue": "^3.4.15",
