@@ -3,7 +3,7 @@
         <div class="flex flex-wrap items-center justify-center h-full md:justify-between">
             <div :class="`flex flex-col justify-center w-full md:w-1/2 md:items-center ${mm2} ${textleft}`">
                 <h1 :class="`text-5xl font-bold leading-tight mx-4 ${textleft}`">
-                    <a href="/centre-de-depollution" :class="textwhity">Centre de dépollution</a>
+                    <a href="/centre.html" :class="textwhity">Centre de dépollution</a>
                 </h1>
                 <a href="/centre-de-depollution">
                     <div class="arrows-animated-wrapper">
