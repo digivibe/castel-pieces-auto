@@ -110,3 +110,6 @@
 .no-animation {
     animation: none !important;
 }
+.colorprimary {
+    color: #0b5c17 !important;
+}
