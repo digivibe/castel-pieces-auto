@@ -6215,6 +6215,7 @@ html {
     background-image: linear-gradient(326deg, rgba(202, 233, 66, .25), rgba(255, 255, 255, 0) 30%), linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/images/hero.jpg");
     background-position: 0 0, 0 0, 50% 80%;
     background-size: auto, auto, cover;
+    background-position: top;
     justify-content: center;
     align-items: flex-end;
     padding-top: 130px;
