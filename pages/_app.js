@@ -1,22 +1,17 @@
-// import '@/styles/Tailwind.css'
-import { TemplateProvider } from '@/context/TemplateContext'
+import Script from 'next/script'
 
-function MyApp({ Component, pageProps, initialTemplate }) {
-    return (
-        <TemplateProvider initialTemplate={initialTemplate}>
+import '@/styles/Global.css'
+import '@/styles/My.css'
+import '@/styles/Tailwind.css'
+
+function MyApp({ Component, pageProps }) {
+   return (
+        <>
             <Component {...pageProps} />
-        </TemplateProvider>
+            <Script src="/js/theme1.jquery.js" strategy="beforeInteractive" />
+            <Script src="/js/theme1.wf.js" strategy="afterInteractive" />
+        </>
     )
-}
-
-MyApp.getInitialProps = async ({ ctx }) => {
-    let initialTemplate = 'template1'
-
-    if (ctx.pathname === '/centre-de-depollution') {
-        initialTemplate = 'template2'
-    }
-
-    return { initialTemplate }
 }
 
 export default MyApp
