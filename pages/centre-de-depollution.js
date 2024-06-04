@@ -74,9 +74,7 @@ export default function CentreDeDepollution() {
                     </div>
                     <div data-w-id="c9bbefc0-551a-b2ec-08e3-689e7301dd75" className="hero-section-video">
                         <div data-poster-url="/images/poster.png" data-video-urls="/videos/2.mp4" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-2 w-background-video w-background-video-atom">
-                            <video id="ee278701-3cea-9f2b-9750-061ae6ddc88f-video" autoplay="" loop=""
-                                style={{ backgroundImage: "url('/images/poster.png')" }} muted="" playsinline="" data-wf-ignore="true"
-                                data-object-fit="cover">
+                            <video id="ee278701-3cea-9f2b-9750-061ae6ddc88f-video" autoPlay="" loop="" style={{ backgroundImage: "url('/images/poster.png')" }} muted="" playsInline="" data-wf-ignore="true" data-object-fit="cover">
                                 <source src="/videos/2.mp4" data-wf-ignore="true" />
                             </video>
                             {/* <noscript>
@@ -843,7 +841,7 @@ export default function CentreDeDepollution() {
                                             <div className="footer-link title-on-mobile">Newsletter</div>
                                             <div className="form-block w-form">
                                                 <form className="newsletter-form">
-                                                    <input className="text-field w-input" maxlength="256" placeholder="Your email" type="email" id="mail-2" required="" />
+                                                    <input className="text-field w-input" maxLength="256" placeholder="Your email" type="email" id="mail-2" required="" />
                                                     <div data-w-id="e30db50a-08bd-a1a0-86ad-25e43f75235b" className="newsletter-button-container">
                                                         <a className="primary-button light w-inline-block">
                                                             <div className="wrapper">
@@ -900,7 +898,7 @@ export default function CentreDeDepollution() {
                                         <input className="form-field is-light-version w-input" placeholder="Numéro tel" type="tel" required/>
                                     </div>
                                     <div>
-                                        <label for="Budget-3" className="field-label">
+                                        <label htmlFor="Budget-3" className="field-label">
                                             Votre véhicule est il roulant?
                                         </label>
                                         <select id="Budget-3" className="select-field w-select">
