@@ -1,0 +1,30 @@
+.whity, .textwhity {
+    color: white !important;
+}  
+.barny {
+    height: 100vh !important;
+}
+.text-primary {
+    color: #008f00
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.section {
+    opacity: 1 !important;
+}
+body, .bgblack {
+    background-color: #1b1b1b !important;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Empêche le débordement horizontal */
+}

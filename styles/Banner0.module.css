@@ -1,0 +1,142 @@
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    height: 0;
+}
+
+.reverseit {
+    transform: rotateZ(180deg) !important;
+}
+
+.darkBackground {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("/images/hero.jpg");
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 768px) {
+    .darkBackground {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+}
+.textright {
+    text-align: right;
+}
+.textleft {
+    text-align: left;
+}
+.metitle {
+    font-family: 'Conthrax', sans-serif !important;
+    font-size: 60px !important;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
+}
+.textwhity {
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
+}
+.opac {
+    opacity: 1 !important;
+}
+
+.fourth {
+    animation: fourthgo 1.5s infinite;
+}
+@keyframes fourthgo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.third {
+    animation: thirdgo 1.5s infinite;
+}
+@keyframes thirdgo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.second {
+    animation: secondgo 1.5s infinite;
+}
+@keyframes secondgo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.first {
+    animation: firstgo 1.5s infinite;
+}
+@keyframes firstgo {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
