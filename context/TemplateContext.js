@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, useEffect } from 'react'
+import { createContext, useState, useContext, useLayoutEffect } from 'react'
 import Script from 'next/script'
 
 const TemplateContext = createContext()
@@ -6,7 +6,7 @@ const TemplateContext = createContext()
 export const TemplateProvider = ({ children, initialTemplate }) => {
     const [template, setTemplate] = useState(initialTemplate)
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const style = document.createElement('link')
         style.rel = 'stylesheet'
         style.href = `/css/${template}.css`
@@ -29,14 +29,8 @@ const ScriptLoader = ({ template }) => {
     return (
         <>
             <Script src={`/js/${template}.jquery.js`} strategy="beforeInteractive" />
-            {
-                template === 'template1' && (
-                    <>
-                        <Script src={`/js/${template}.wf.js`} strategy="afterInteractive" />
-                        <Script src="https://cdn.tailwindcss.com" />
-                    </>
-                )
-            }
+            <Script src={`/js/${template}.wf.js`} strategy="afterInteractive" />
+            { template === 'template1' && (<Script src="https://cdn.tailwindcss.com" />) }
         </>
     )
 }
