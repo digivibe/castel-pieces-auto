@@ -1,51 +1,32 @@
-.fullscreen {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    height: 0;
+.whity, .textwhity {
+    color: white !important;
+}  
+.barny {
+    height: 100vh !important;
+}
+.text-primary {
+    color: #008f00
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.reverseit {
-    transform: rotateZ(180deg) !important;
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
-
-.darkBackground {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url("/images/hero.jpg");
-    background-position: left center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-@media screen and (min-width: 768px) {
-    .darkBackground {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-}
-.textright {
-    text-align: right;
-}
-.textleft {
-    text-align: left;
-}
-.metitle {
-    font-family: 'Conthrax', sans-serif !important;
-    font-size: 60px !important;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
-}
-.textwhity {
-    color: white;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 4px -4px 8px rgba(0, 0, 0, 0.3);
-}
-.opac {
+.section {
     opacity: 1 !important;
+}
+body, .bgblack {
+    background-color: #1b1b1b !important;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .fourth {

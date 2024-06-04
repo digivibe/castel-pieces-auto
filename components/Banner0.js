@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import styles from '@/styles/Banner0.module.css'
+import styles from '@/styles/part1/Banner0.module.css'
 
 const { mm2, textleft, textwhity, reverseit, textright } = styles
 
