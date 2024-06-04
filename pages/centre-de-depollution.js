@@ -2,13 +2,15 @@ import React from 'react'
 import Head from 'next/head'
 
 import Theme2 from '@/layouts/Theme2'
-import { APP_NAME } from '@/data/config'
+import { APP_NAME, CANONICAL } from '@/data/config'
 
 export default function CentreDeDepollution() {
     return (
         <>
             <Head>
                 <title>{`Centre de dépollution - ${APP_NAME}`}</title>
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href={`${CANONICAL}/centre-de-depollution`} />
             </Head>
             <Theme2>
                 <div className="body">

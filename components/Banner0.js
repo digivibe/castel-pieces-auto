@@ -53,12 +53,12 @@ const Banner0 = () => {
                 </div>
                 <div className={`flex flex-col justify-center items-end w-full px-4 md:w-1/2 md:items-center ${mm2}`}>
                     <h2 className={`text-5xl font-bold leading-tight w-full ${textright} textwhity`}>
-                        <a href="/garage-atelier-mecanique" className="block textwhity">Atelier mécanique</a>
+                        <a href="/atelier-mecanique" className="block textwhity">Atelier mécanique</a>
                     </h2>
                     <p className="text-2xl mt-4">
-                        <a href="/garage-atelier-mecanique" className="textwhity">toutes marques</a>
+                        <a href="/atelier-mecanique" className="textwhity">toutes marques</a>
                     </p>
-                    <a href="/garage-atelier-mecanique" className="mt-8 flex justify-center md:justify-end">
+                    <a href="/atelier-mecanique" className="mt-8 flex justify-center md:justify-end">
                         <div className="arrows-animated-wrapper flex space-x-2">
                             <img src="/images/arrow-outlone.svg" loading="lazy" alt="icon" className="fourth" width="67" height="84" />
                             <img src="/images/arrow-outlone.svg" loading="lazy" alt="icon" className="third" width="67" height="84" />

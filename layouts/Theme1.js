@@ -2,8 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import Script from 'next/script'
 
-// import '@/styles/Theme1.css'
-
 const Theme1 = ({ children }) => {
     return (
         <>

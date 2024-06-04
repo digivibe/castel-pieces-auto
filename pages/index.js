@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 
+import { APP_NAME, CANONICAL } from '@/data/config'
 import Theme1 from '@/layouts/Theme1'
 import Banner0 from '@/components/Banner0'
-import { APP_NAME, CANONICAL } from '@/data/config'
 
 const Home = () => {
     useEffect(() => {
