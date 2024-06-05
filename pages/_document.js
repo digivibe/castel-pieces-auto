@@ -4,25 +4,30 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx)
-        const currentPath = ctx.pathname
+        const currentPath = ctx.asPath.split('?')[0]
 
         let dataWfPage, dataWfSite
-        if (currentPath === '/centre-de-depollution') {
-            dataWfPage = '632156d1693b92b5f94f0b60'
-            dataWfSite = '62cbb076a33caa282db986ef'
+
+        const pageMappings = {
+            '/centre-de-depollution': '632156d1693b92b5f94f0b60',
+            '/mentions-legales': '6544c7ea2104d8e9b284a658',
         }
-        else if ( currentPath === '/reprise-vehicules-accidentes' || currentPath === '/reprise-vehicules-hors-d-usage' || currentPath === '/objectif-et-obligations-d-un-vhu' || currentPath === '/prime-a-la-conversion' || currentPath === '/centre-vhu' ) {
-            dataWfPage = '632156d1693b925a2b4f0b74'
-            dataWfSite = '62cbb076a33caa282db986ef'
+
+        const slugMappings = {
+            'reprise-vehicules-accidentes': '632156d1693b925a2b4f0b74',
+            'reprise-vehicules-hors-d-usage': '632156d1693b925a2b4f0b74',
+            'objectif-et-obligations-d-un-vhu': '632156d1693b925a2b4f0b74',
+            'prime-a-la-conversion': '632156d1693b925a2b4f0b74',
+            'centre-vhu': '632156d1693b925a2b4f0b74',
         }
-        else {
-            if ( currentPath === '/mentions-legales' ) {
-                dataWfPage = '6544c7ea2104d8e9b284a658'
-            }
-            else {
-                dataWfPage = '6544c7ea2104d8e9b284a660'
-            }
-            dataWfSite = '6544c7e92104d8e9b284a55b'
+
+        if (pageMappings[currentPath]) {
+            dataWfPage = pageMappings[currentPath]
+            dataWfSite = '62cbb076a33caa282db986ef'
+        } else {
+            const slug = currentPath.split('/')[1]
+            dataWfPage = slugMappings[slug] || '6544c7ea2104d8e9b284a660'
+            dataWfSite = slugMappings[slug] ? '62cbb076a33caa282db986ef' : '6544c7e92104d8e9b284a55b'
         }
 
         return { ...initialProps, dataWfPage, dataWfSite }
