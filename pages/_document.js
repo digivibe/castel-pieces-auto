@@ -8,14 +8,14 @@ class MyDocument extends Document {
 
         let dataWfPage, dataWfSite
         if (currentPath === '/centre-de-depollution') {
-            if ( currentPath === '/reprise-vehicules-accidentes' || currentPath === '/reprise-vehicules-hors-d-usage' || currentPath === '/objectif-et-obligations-d-un-vhu' || currentPath === '/prime-a-la-conversion' || currentPath === '/centre-vhu' ) {
-                dataWfPage = '632156d1693b925a2b4f0b74'
-            }
-            else {
-                dataWfPage = '632156d1693b92b5f94f0b60'
-            }
+            dataWfPage = '632156d1693b92b5f94f0b60'
             dataWfSite = '62cbb076a33caa282db986ef'
-        } else {
+        }
+        else if ( currentPath === '/reprise-vehicules-accidentes' || currentPath === '/reprise-vehicules-hors-d-usage' || currentPath === '/objectif-et-obligations-d-un-vhu' || currentPath === '/prime-a-la-conversion' || currentPath === '/centre-vhu' ) {
+            dataWfPage = '632156d1693b925a2b4f0b74'
+            dataWfSite = '62cbb076a33caa282db986ef'
+        }
+        else {
             if ( currentPath === '/mentions-legales' ) {
                 dataWfPage = '6544c7ea2104d8e9b284a658'
             }
