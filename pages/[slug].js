@@ -1,12 +1,11 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-
 import { APP_NAME } from '@/data/config'
 import { article } from '@/data/article'
 import Theme2 from '@/layouts/Theme2'
 import Article from '@/components/Article'
 
-export default function ArticlePage() {
+export default function ArticlePage({ foundArticle }) {
     const router = useRouter()
     const { slug } = router.query
 
@@ -14,11 +13,15 @@ export default function ArticlePage() {
         return <div>Loading...</div>
     }
 
-    const foundArticle = article.find(item => item.slug === slug)
-
     if (!foundArticle) {
-        router.push('/404')
-        return null
+        return (
+            <>
+                <Head>
+                    <title>404 - Page Not Found</title>
+                </Head>
+                <div>404 - Page Not Found</div>
+            </>
+        )
     }
 
     return (
