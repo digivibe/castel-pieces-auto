@@ -11,7 +11,12 @@ class MyDocument extends Document {
             dataWfPage = '632156d1693b92b5f94f0b60'
             dataWfSite = '62cbb076a33caa282db986ef'
         } else {
-            dataWfPage = '6544c7ea2104d8e9b284a660'
+            if ( currentPath === '/mentions-legales' ) {
+                dataWfPage = '6544c7ea2104d8e9b284a658'
+            }
+            else {
+                dataWfPage = '6544c7ea2104d8e9b284a660'
+            }
             dataWfSite = '6544c7e92104d8e9b284a55b'
         }
 

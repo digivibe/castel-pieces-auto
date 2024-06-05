@@ -6410,7 +6410,9 @@ html {
     color: var(--primary);
     font-size: 20px;
   }
-  
+  .primaryy {
+    color: var(--primary);
+  }
   .footer-link-main.primary:hover {
     opacity: .7;
   }
