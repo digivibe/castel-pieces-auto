@@ -1,5 +1,9 @@
 import { useRouter } from 'next/router'
+import Head from 'next/head'
+
+import { APP_NAME } from '@/data/config'
 import { article } from '@/data/article'
+import Theme2 from '@/layouts/Theme2'
 import Article from '@/components/Article'
 
 export default function ArticlePage() {
@@ -13,13 +17,19 @@ export default function ArticlePage() {
     const foundArticle = article.find(item => item.slug === slug)
 
     if (!foundArticle) {
-        return <div>Article not found</div>
+        router.push('/404')
+        return null
     }
 
     return (
-        <div className="article-page-container">
-            <Article title={foundArticle.title} />
-        </div>
+        <>
+            <Theme2>
+                <Head>
+                    <title>{`${foundArticle.title} - ${APP_NAME}`}</title>
+                </Head>
+                <Article data={foundArticle} />
+            </Theme2>
+        </>
     )
 }
 

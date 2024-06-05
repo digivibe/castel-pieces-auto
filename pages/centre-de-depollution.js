@@ -515,8 +515,8 @@ const Loader = () => (
     <div className="loader">
         <div className="wide-container loader">
             <div className="section-title-wrapper for-loader">
-                <h2 className="heading-2 absolute white">Accueil</h2>
-                <div className="section-outlined-heading outlined-white">Accueil</div>
+                <h2 className="heading-2 absolute white">VHU</h2>
+                <div className="section-outlined-heading outlined-white">VHU</div>
             </div>
         </div>
     </div>
