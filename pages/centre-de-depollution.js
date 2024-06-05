@@ -568,7 +568,7 @@ export default function CentreDeDepollution() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href={`${CANONICAL}/centre-de-depollution`} />
             </Head>
-            <Theme2>
+            <Theme2 type={1}>
                 <div className="body">
                     <div className="cursor">
                         <div className="cursor-inner"></div>

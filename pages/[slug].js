@@ -26,7 +26,7 @@ export default function ArticlePage({ foundArticle }) {
 
     return (
         <>
-            <Theme2>
+            <Theme2 type={2}>
                 <Head>
                     <title>{`${foundArticle.title} - ${APP_NAME}`}</title>
                 </Head>
