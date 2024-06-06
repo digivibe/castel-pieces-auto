@@ -244,7 +244,7 @@ export default function CentreDeDepollution() {
                                                         composants de manière sécuritaire et conforme aux réglementations.
                                                     </p>
                                                 </div>
-                                                <a data-w-id="33356b5b-ef8d-880f-e0fa-9a881add0d85" href="/" className="primary-button w-inline-block">
+                                                <a data-w-id="33356b5b-ef8d-880f-e0fa-9a881add0d85" href="/centre-vhu" className="primary-button w-inline-block">
                                                     <div className="wrapper button">
                                                         <div className="primary-button-text">En savoir plus</div>
                                                         <div className="primary-button-text absolute">En savoir plus</div>
@@ -705,7 +705,7 @@ export default function CentreDeDepollution() {
                                         </p>
                                     </div>
                                     <a data-w-id="33356b5b-ef8d-880f-e0fa-9a881add0d85" className="primary-button w-inline-block">
-                                        <div className="wrapper button">
+                                        <div id="othhern" className="wrapper button">
                                             <div className="primary-button-text">Obtenir devis</div>
                                             <div className="primary-button-text absolute">Obtenir devis</div>
                                         </div>

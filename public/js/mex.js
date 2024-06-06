@@ -8,3 +8,4 @@ function togglePopup() {
 // Attachement de la fonction comme gestionnaire d'événement aux deux boutons
 document.getElementById('widgetButton').addEventListener('click', togglePopup);
 document.getElementById('othherb').addEventListener('click', togglePopup);
+document.getElementById('othhern').addEventListener('click', togglePopup);

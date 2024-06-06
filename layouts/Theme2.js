@@ -23,7 +23,7 @@ const Theme2 = ({ children, type }) => {
                         <Script src="/js/mex.js" strategy="beforeInteractive" />
                     </>
                 ) : (
-                    <Script src="/js/wf2.1.js" strategy="afterInteractive" />
+                    <Script src="/js/wf2.1.js" strategy="beforeInteractive" />
                 )
             }
             
