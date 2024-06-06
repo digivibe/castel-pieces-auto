@@ -32,10 +32,10 @@ export default function Article({ data }) {
                     <div data-w-id="97cf5e79-2a29-0a14-70fd-322d6cb984af" style={{ opacity: 0 }} className="overview-container">
                         <div className="section-title-wrapper center">
                             <div className="section-outlined-heading outlined">
-                                En savoir plus
+                                Plus de détails
                             </div>
                             <h2 className="heading-2 absolute">
-                                En savoir plus
+                                Plus de détails
                             </h2>
                             <div data-w-id="01be8859-019e-d01f-06c8-b771a0c40abd" className="section-outlined-heading-trigger">
                             </div>
@@ -47,9 +47,10 @@ export default function Article({ data }) {
                         </div><a data-w-id="0a59c5f7-0c65-1ab9-6dc7-ece741e17707" href="https://vimeo.com/showcase/9821811"
                             target="_blank" className="primary-button w-inline-block">
                             <div className="wrapper button">
-                                <div data-w-id="7e926975-671f-28ac-bdbc-1ca643e2a850" className="primary-button-text">View Online
+                                <div data-w-id="7e926975-671f-28ac-bdbc-1ca643e2a850" className="primary-button-text">
+                                    Enlèvement VHU    
                                 </div>
-                                <div data-w-id="7e926975-671f-28ac-bdbc-1ca643e2a852" className="primary-button-text absolute">View
+                                <div data-w-id="7e926975-671f-28ac-bdbc-1ca643e2a852" className="primary-button-text absolute">
                                     Enlèvement VHU
                                 </div>
                             </div>
@@ -163,7 +164,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29a3" className="award-text-container">
-                                        <div className="animation-item-text white">Storyboarding</div>
+                                        <div className="animation-item-text white">
+                                            {data.line1}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="animation-item">
@@ -175,7 +178,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29ae" className="award-text-container">
-                                        <div className="animation-item-text white">Design</div>
+                                        <div className="animation-item-text white">
+                                            {data.line2}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +194,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29c5" className="award-text-container">
-                                        <div className="animation-item-text white">Scriptwriting</div>
+                                        <div className="animation-item-text white">
+                                            {data.line3}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="animation-item">
@@ -201,7 +208,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29d0" className="award-text-container">
-                                        <div className="animation-item-text white">Animation</div>
+                                        <div className="animation-item-text white">
+                                            {data.line4}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +224,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29e7" className="award-text-container">
-                                        <div className="animation-item-text white">Motion</div>
+                                        <div className="animation-item-text white">
+                                            {data.line5}
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="animation-item">
@@ -227,7 +238,9 @@ export default function Article({ data }) {
                                         </div>
                                     </div>
                                     <div data-w-id="03ed6f1d-bbc2-3f04-5ea0-26b1056c29f2" className="award-text-container">
-                                        <div className="animation-item-text white">Marketing</div>
+                                        <div className="animation-item-text white">
+                                            {data.line6}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
