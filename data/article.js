@@ -1,22 +1,72 @@
 export const article = [
     {
         "slug": "reprise-vehicules-accidentes",
-        "title": "Reprise Véhicules Accidentés"
+        "title": "Reprise Véhicules Accidentés",
+        "first": "Reprise Véhicules",
+        "second": "Accidentés",
+        "image": "/images/acc.jpg",
+        "text1.": `Amazon Web Services is known for providing some of the best (if not the best) technological business solutions in the world. Their incredible array of products and solutions allows large companies to scale securely and effectively. However, their solutions were heavily geared towards large comapnies and enterprises. While a large portion of the market who are small  to medium sized companies are more attracted to other companies like Cisco, Google, etc for their tech products and solutions. AWS needed to adapt and regain control of this smaller market. Therefore, they decided to launch a Small Medium Business Department that focused on delivering scalability, security, and savings for businesses of any size. EZIO Creative provided branding consulting and helped develop the department&#x27;s core branding. Our part also involved developing 7 motion graphic explainer videos for a marketing campaign targeted at solving 7 key SMB pain points to help business owners understand how AWS can help their business grow with their wide breadth of solutions that unlock a world of possibilities.`,
+        "line1": "Ligne 1",
+        "line2": "Ligne 2",
+        "line3": "Ligne 3",
+        "line4": "Ligne 4",
+        "line5": "Ligne 5",
+        "line6": "Ligne 6"
     },
     {
         "slug": "reprise-vehicules-hors-d-usage",
-        "title": "Reprise Véhicules Hors d'Usage"
+        "title": "Reprise Véhicules Hors d'Usage",
+        "first": "Reprise Véhicules",
+        "second": "Hors d'Usage",
+        "image": "/images/hs.jpg",
+        "text1.": `Amazon Web Services is known for providing some of the best (if not the best) technological business solutions in the world. Their incredible array of products and solutions allows large companies to scale securely and effectively. However, their solutions were heavily geared towards large comapnies and enterprises. While a large portion of the market who are small  to medium sized companies are more attracted to other companies like Cisco, Google, etc for their tech products and solutions. AWS needed to adapt and regain control of this smaller market. Therefore, they decided to launch a Small Medium Business Department that focused on delivering scalability, security, and savings for businesses of any size. EZIO Creative provided branding consulting and helped develop the department&#x27;s core branding. Our part also involved developing 7 motion graphic explainer videos for a marketing campaign targeted at solving 7 key SMB pain points to help business owners understand how AWS can help their business grow with their wide breadth of solutions that unlock a world of possibilities.`,
+        "line1": "Ligne 1",
+        "line2": "Ligne 2",
+        "line3": "Ligne 3",
+        "line4": "Ligne 4",
+        "line5": "Ligne 5",
+        "line6": "Ligne 6"
     },
     {
         "slug": "objectif-et-obligations-d-un-vhu",
-        "title": "Objectif et Obligations d'un VHU"
+        "title": "Objectif et Obligations d'un VHU",
+        "first": "Reprise Véhicules",
+        "second": "Hors d'Usage",
+        "image": "/images/p5.jpg",
+        "text1.": `Amazon Web Services is known for providing some of the best (if not the best) technological business solutions in the world. Their incredible array of products and solutions allows large companies to scale securely and effectively. However, their solutions were heavily geared towards large comapnies and enterprises. While a large portion of the market who are small  to medium sized companies are more attracted to other companies like Cisco, Google, etc for their tech products and solutions. AWS needed to adapt and regain control of this smaller market. Therefore, they decided to launch a Small Medium Business Department that focused on delivering scalability, security, and savings for businesses of any size. EZIO Creative provided branding consulting and helped develop the department&#x27;s core branding. Our part also involved developing 7 motion graphic explainer videos for a marketing campaign targeted at solving 7 key SMB pain points to help business owners understand how AWS can help their business grow with their wide breadth of solutions that unlock a world of possibilities.`,
+        "line1": "Ligne 1",
+        "line2": "Ligne 2",
+        "line3": "Ligne 3",
+        "line4": "Ligne 4",
+        "line5": "Ligne 5",
+        "line6": "Ligne 6"
     },
     {
         "slug": "prime-a-la-conversion",
-        "title": "Prime à la conversion"
+        "title": "Prime à la conversion",
+        "first": "Prime à la",
+        "second": "Conversion",
+        "image": "/images/p6.jpg",
+        "text1.": `Amazon Web Services is known for providing some of the best (if not the best) technological business solutions in the world. Their incredible array of products and solutions allows large companies to scale securely and effectively. However, their solutions were heavily geared towards large comapnies and enterprises. While a large portion of the market who are small  to medium sized companies are more attracted to other companies like Cisco, Google, etc for their tech products and solutions. AWS needed to adapt and regain control of this smaller market. Therefore, they decided to launch a Small Medium Business Department that focused on delivering scalability, security, and savings for businesses of any size. EZIO Creative provided branding consulting and helped develop the department&#x27;s core branding. Our part also involved developing 7 motion graphic explainer videos for a marketing campaign targeted at solving 7 key SMB pain points to help business owners understand how AWS can help their business grow with their wide breadth of solutions that unlock a world of possibilities.`,
+        "line1": "Ligne 1",
+        "line2": "Ligne 2",
+        "line3": "Ligne 3",
+        "line4": "Ligne 4",
+        "line5": "Ligne 5",
+        "line6": "Ligne 6"
     },
     {
         "slug": "centre-vhu",
-        "title": "Cente de dépollution"
+        "title": "Cente de dépollution",
+        "first": "Cente de",
+        "second": "Dépollution",
+        "image": "/images/p1.jpg",
+        "text1.": `Amazon Web Services is known for providing some of the best (if not the best) technological business solutions in the world. Their incredible array of products and solutions allows large companies to scale securely and effectively. However, their solutions were heavily geared towards large comapnies and enterprises. While a large portion of the market who are small  to medium sized companies are more attracted to other companies like Cisco, Google, etc for their tech products and solutions. AWS needed to adapt and regain control of this smaller market. Therefore, they decided to launch a Small Medium Business Department that focused on delivering scalability, security, and savings for businesses of any size. EZIO Creative provided branding consulting and helped develop the department&#x27;s core branding. Our part also involved developing 7 motion graphic explainer videos for a marketing campaign targeted at solving 7 key SMB pain points to help business owners understand how AWS can help their business grow with their wide breadth of solutions that unlock a world of possibilities.`,
+        "line1": "Ligne 1",
+        "line2": "Ligne 2",
+        "line3": "Ligne 3",
+        "line4": "Ligne 4",
+        "line5": "Ligne 5",
+        "line6": "Ligne 6"
     }
 ]
