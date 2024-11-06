@@ -1,3 +1,13 @@
 @import url("part1/Global.css");
 @import url("part1/My.css");
 @import url("part1/Tailwind.css");
+
+.fixed {
+    position: fixed;
+}
+.bottom-6 {
+    bottom: 1.5rem;
+}
+.rights-6 {
+    right: 10rem !important;
+}

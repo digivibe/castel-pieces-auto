@@ -10,7 +10,7 @@ import Section2 from '@/components/Section2.2'
 import Section3 from '@/components/Section2.3'
 import SectionDevis from '@/components/SectionDevis'
 import Footer from '@/components/Footer'
-import FloatingHelpButton from "@/components/FloatBtn"
+import FloatingHelpButton2 from "@/components/FloatBtn2"
 
 const AtelierMecanique = () => {
 
@@ -28,7 +28,7 @@ const AtelierMecanique = () => {
                 <Section3 />
                 <SectionDevis />
                 <Footer />
-                <FloatingHelpButton />
+                <FloatingHelpButton2 />
             </Theme1>
         </>
     )
