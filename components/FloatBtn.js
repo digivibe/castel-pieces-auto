@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { FaLifeRing } from "react-icons/fa";
-import Image from "next/image";
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { FaLifeRing } from "react-icons/fa"
+import Image from "next/image"
 
 export default function FloatingHelpButton() {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false)
 
-    const openModal = () => setShowModal(true);
-    const closeModal = () => setShowModal(false);
+    const openModal = () => setShowModal(true)
+    const closeModal = () => setShowModal(false)
 
     return (
         <>
@@ -29,11 +29,14 @@ export default function FloatingHelpButton() {
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-75">
                     <div className="bg-white rounded-lg shadow-xl w-full max-w-md p-6 space-y-6">
                         <div className="flex justify-between items-center border-b pb-3">
-                            <h3 className="text-xl font-semibold text-gray-900">Contactez-nous</h3>
-                            <button onClick={closeModal} className="text-gray-400 hover:text-gray-600">
+                            <h3 className="text-2xl font-semibold text-gray-900">Besoin d'aide ?</h3>
+                            <button onClick={closeModal} className="text-gray-400 hover:text-gray-600 text-xl">
                                 ✕
                             </button>
                         </div>
+                        <p className="text-gray-600 text-center">
+                            Remplissez le formulaire ci-dessous ou contactez-nous directement par WhatsApp.
+                        </p>
                         <form className="space-y-5">
                             <div>
                                 <label className="block text-gray-700 font-medium mb-2">Nom</label>
@@ -75,7 +78,8 @@ export default function FloatingHelpButton() {
                                 </button>
                             </div>
                         </form>
-                        <div className="flex items-center justify-center mt-6 space-x-3">
+                        <div className="flex flex-col items-center mt-6 space-y-2">
+                            <span className="text-gray-500 font-medium">ou</span>
                             <button
                                 onClick={() => window.open("https://wa.me/votre_numero_ici", "_blank")}
                                 className="flex items-center px-4 py-3 bg-[#1E1E1E] text-white rounded-lg hover:bg-[#333] transition"
@@ -94,5 +98,5 @@ export default function FloatingHelpButton() {
                 </div>
             )}
         </>
-    );
+    )
 }
