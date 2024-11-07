@@ -1,13 +1,13 @@
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { FaLifeRing } from "react-icons/fa"
-import Image from "next/image"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { FaLifeRing } from "react-icons/fa";
+import Image from "next/image";
 
 export default function FloatingHelpButton() {
-    const [showModal, setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
 
-    const openModal = () => setShowModal(true)
-    const closeModal = () => setShowModal(false)
+    const openModal = () => setShowModal(true);
+    const closeModal = () => setShowModal(false);
 
     return (
         <>
@@ -78,8 +78,12 @@ export default function FloatingHelpButton() {
                                 </button>
                             </div>
                         </form>
-                        <div className="flex flex-col items-center mt-6 space-y-2">
+                        <div className="flex items-center justify-center mt-6 space-x-3">
+                            <hr className="flex-grow border-t border-gray-300" />
                             <span className="text-gray-500 font-medium">ou</span>
+                            <hr className="flex-grow border-t border-gray-300" />
+                        </div>
+                        <div className="flex items-center justify-center mt-4">
                             <button
                                 onClick={() => window.open("https://wa.me/votre_numero_ici", "_blank")}
                                 className="flex items-center px-4 py-3 bg-[#1E1E1E] text-white rounded-lg hover:bg-[#333] transition"
@@ -98,5 +102,5 @@ export default function FloatingHelpButton() {
                 </div>
             )}
         </>
-    )
+    );
 }
