@@ -46,13 +46,13 @@ export default function FloatingHelpButton() {
                                 transition={{ duration: 0.25, ease: "easeOut" }}
                                 className="bg-white text-gray-800 px-4 py-2 rounded-md shadow-md backdrop-blur-sm bg-opacity-90 border border-gray-200 hover:bg-gray-50 transition-colors duration-200 w-full text-center flex items-center space-x-2"
                                 >
-                                <Link
+                                <a
                                     href="/contactez-nous"
                                     className="text-[#008f00] text-sm font-medium flex items-center justify-center w-full focus:outline-none"
                                 >
                                     <FaPen size={32} className="mr-1" />
                                     Remplir le formulaire
-                                </Link>
+                                </a>
                             </motion.div>
                         </div>
                     )}

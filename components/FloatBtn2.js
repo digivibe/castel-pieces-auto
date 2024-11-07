@@ -47,13 +47,13 @@ export default function FloatingHelpButton() {
                             </Link>
 
                             {/* Option Formulaire */}
-                            <Link
+                            <a
                                 href="/contactez-nous"
                                 className="flex items-center space-x-3 text-gray-700 hover:text-[#008f00] transition duration-200 focus:outline-none"
                             >
                                 <FaPen className="text-[#008f00]" size={20} />
                                 <span className="text-sm font-medium">Remplir le formulaire</span>
-                            </Link>
+                            </a>
                         </div>
                     </motion.div>
                 )}
