@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
-import { FaQuestion, FaPen, FaWhatsapp } from "react-icons/fa"
+import { FaLifeRing, FaPen, FaWhatsapp } from "react-icons/fa"
 
 export default function FloatingHelpButton() {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,6 +14,7 @@ export default function FloatingHelpButton() {
         <>
             <div
                 className="fixed bottom-8 right-24 flex flex-col items-center"
+                style={{ zIndex: 24 }}
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
             >
@@ -45,13 +46,13 @@ export default function FloatingHelpButton() {
                                 transition={{ duration: 0.25, ease: "easeOut" }}
                                 className="bg-white text-gray-800 px-4 py-2 rounded-md shadow-md backdrop-blur-sm bg-opacity-90 border border-gray-200 hover:bg-gray-50 transition-colors duration-200 w-full text-center flex items-center space-x-2"
                                 >
-                                <button
-                                    onClick={openModal}
+                                <Link
+                                    href="/contactez-nous"
                                     className="text-[#008f00] text-sm font-medium flex items-center justify-center w-full focus:outline-none"
                                 >
                                     <FaPen size={32} className="mr-1" />
                                     Remplir le formulaire
-                                </button>
+                                </Link>
                             </motion.div>
                         </div>
                     )}
@@ -63,7 +64,7 @@ export default function FloatingHelpButton() {
                     whileTap={{ scale: 0.95 }}
                     className="bg-[#008f00] text-white p-4 rounded-full shadow-xl focus:outline-none focus:ring-4 focus:ring-[#008f00] transition-transform duration-300"
                 >
-                    <FaQuestion size={24} />
+                    <FaLifeRing size={24} />
                 </motion.button>
             </div>
 

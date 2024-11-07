@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
-import { FaQuestionCircle, FaPen, FaWhatsapp } from "react-icons/fa"
+import { FaLifeRing, FaPen, FaWhatsapp } from "react-icons/fa"
 
 export default function FloatingHelpButton() {
     const [isOpen, setIsOpen] = useState(false)
@@ -14,11 +14,12 @@ export default function FloatingHelpButton() {
         <>
             <motion.div
                 onClick={() => setIsOpen(!isOpen)}
+                style={{ zIndex: 24 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="fixed bottom-8 right-8 bg-[#008f00] text-white p-4 rounded-full shadow-lg cursor-pointer focus:outline-none"
             >
-                <FaQuestionCircle size={24} />
+                <FaLifeRing size={24} />
             </motion.div>
             
             <AnimatePresence>
@@ -46,13 +47,13 @@ export default function FloatingHelpButton() {
                             </Link>
 
                             {/* Option Formulaire */}
-                            <button
-                                onClick={openModal}
+                            <Link
+                                href="/contactez-nous"
                                 className="flex items-center space-x-3 text-gray-700 hover:text-[#008f00] transition duration-200 focus:outline-none"
                             >
                                 <FaPen className="text-[#008f00]" size={20} />
                                 <span className="text-sm font-medium">Remplir le formulaire</span>
-                            </button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}

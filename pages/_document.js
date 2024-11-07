@@ -11,6 +11,7 @@ class MyDocument extends Document {
         const pageMappings = {
             '/centre-de-depollution': '632156d1693b92b5f94f0b60',
             '/mentions-legales': '6544c7ea2104d8e9b284a658',
+            '/contactez-nous': '6544c7ea2104d8e9b284a654'
         }
 
         const slugMappings = {
